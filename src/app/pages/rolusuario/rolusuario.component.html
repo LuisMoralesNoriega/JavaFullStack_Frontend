@@ -1,0 +1,18 @@
+<mat-toolbar>Asignacion de Rol a Usuario</mat-toolbar>
+
+<div class="example-container">
+
+  <mat-form-field>
+    <mat-select placeholder="Usuario" [(value)]="idUsuarioSeleccionado">
+      <mat-option *ngFor="let p of usuarios" [value]="p.idUsuario">
+        {{p.nombre}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+
+
+
+</div>
+
+
